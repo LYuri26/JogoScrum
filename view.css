@@ -1,0 +1,221 @@
+/* Estilos mantidos do arquivo anterior */
+:root {
+  --primary-color: #4e73df;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --dark-color: #5a5c69;
+  --light-color: #f8f9fc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.card {
+  border: none;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.team-card {
+  background-color: white;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.team-card h3 {
+  color: var(--primary-color);
+  border-bottom: 1px solid #e3e6f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  margin-bottom: 0.5rem;
+  color: #6e707e;
+}
+
+.team-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e3e6f0;
+}
+
+.team-meta div {
+  text-align: center;
+}
+
+.team-meta span {
+  display: block;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.penalty-card {
+  padding: 1.5rem;
+  border-left: 0.25rem solid var(--danger-color);
+  background-color: #f8f9fc;
+  border-radius: 0.35rem;
+}
+
+.penalty-card h3 {
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+.bonus-card {
+  padding: 1.5rem;
+  border-left: 0.25rem solid var(--success-color);
+  background-color: #f8f9fc;
+  border-radius: 0.35rem;
+}
+
+.bonus-card h3 {
+  color: var(--success-color);
+  margin-bottom: 1rem;
+}
+
+.history-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-container ul li {
+  background-color: #f8f9fa;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.request-item {
+  background-color: #fff3cd;
+  border-left: 4px solid var(--warning-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-time {
+  font-weight: 600;
+  color: var(--danger-color);
+  margin-left: 1rem;
+}
+
+.text-danger {
+  color: var(--danger-color) !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .team-card {
+    padding: 1rem;
+  }
+
+  .team-meta {
+    flex-direction: column;
+  }
+
+  .team-meta div {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Animações para transições suaves */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pulse {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos para o rodapé */
+.footer {
+  border-top: 1px solid #e3e6f0;
+  background-color: #f8f9fc !important;
+  color: #5a5c69;
+  transition: all 0.3s ease;
+}
+
+.footer a {
+  color: #6e707e;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer strong {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* Ajuste de margem para o conteúdo principal */
+.container {
+  padding-bottom: 80px; /* Para evitar que o conteúdo fique muito próximo do rodapé */
+}

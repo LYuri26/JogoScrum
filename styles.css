@@ -1,0 +1,372 @@
+/* Estilos gerais */
+:root {
+  --primary-color: #4e73df;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --dark-color: #5a5c69;
+  --light-color: #f8f9fc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para cabeçalhos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* Estilos para os cards */
+.card {
+  border: none;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.card-header {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para o formulário */
+.form-control,
+.form-select {
+  border: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.input-group-text {
+  background-color: #eaecf4;
+  border: 1px solid #d1d3e2;
+  color: #6e707e;
+}
+
+/* Estilos para os botões */
+.btn {
+  font-weight: 500;
+  border-radius: 0.35rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.btn-success:hover {
+  background-color: #17a673;
+  border-color: #169b6b;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+  background-color: #d62c1a;
+  border-color: #cc2a19;
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+  color: #1f2d3d;
+}
+
+.btn-warning:hover {
+  background-color: #e0b22e;
+  border-color: #d9aa2b;
+}
+
+/* Estilos para a lista de equipes */
+.team-card {
+  background-color: white;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.team-card h3 {
+  color: var(--primary-color);
+  border-bottom: 1px solid #e3e6f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  margin-bottom: 0.5rem;
+  color: #6e707e;
+}
+
+.team-card .team-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e3e6f0;
+}
+
+.team-card .team-meta div {
+  text-align: center;
+}
+
+.team-card .team-meta span {
+  display: block;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* Estilos para a exibição de penalidades */
+.penalty-container {
+  background-color: white;
+}
+
+.penalty-card {
+  padding: 1.5rem;
+  border-left: 0.25rem solid var(--danger-color);
+  background-color: #f8f9fc;
+  border-radius: 0.35rem;
+}
+
+.penalty-card h3 {
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+.penalty-card p {
+  margin-bottom: 0.5rem;
+}
+
+.bonus-card {
+  padding: 1.5rem;
+  border-left: 0.25rem solid var(--success-color);
+  background-color: #f8f9fc;
+  border-radius: 0.35rem;
+}
+
+.bonus-card h3 {
+  color: var(--success-color);
+  margin-bottom: 1rem;
+}
+
+/* Estilos para o histórico de penalidades */
+.history-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-container ul li {
+  background-color: #f8f9fa;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.history-container ul li:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+/* Estilos para demandas urgentes */
+.request-item {
+  background-color: #fff3cd;
+  border-left: 4px solid var(--warning-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-item .request-info {
+  flex: 1;
+}
+
+.request-item .request-time {
+  font-weight: 600;
+  color: var(--danger-color);
+  margin-left: 1rem;
+}
+
+/* Estilos para toast */
+.toast {
+  border-radius: 0.35rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.toast-header {
+  border-bottom: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .team-card {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .team-card .team-meta {
+    flex-direction: column;
+  }
+
+  .team-card .team-meta div {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos para a seção de empréstimos */
+.loan-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.loan-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loan-time {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.loan-details {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.loan-details p {
+  margin-bottom: 5px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+  border-top: 1px solid #e3e6f0;
+  background-color: #f8f9fc !important;
+  color: #5a5c69;
+  transition: all 0.3s ease;
+}
+
+.footer a {
+  color: #6e707e;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer strong {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* Ajuste de margem para o conteúdo principal */
+.container {
+  padding-bottom: 80px; /* Para evitar que o conteúdo fique muito próximo do rodapé */
+}
